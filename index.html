@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
     <script src="facebook.script.js"></script>
+    <script src="twitter.js"></script>
    
 </head>
 <header>
@@ -48,12 +49,51 @@
           
         
         </section>
+
+        <body>
+            <main class="cards">
+                
+                <section class="card">
+                    <div class="icon">
+                        <img src="img/twitter.png" alt="facebook">
+                    </div>
+                    <h3>Twitter</h3>
+                    <button onclick="signin()" 
+                    id="sign-in">
+                
+                </button>"> Login</button>
+                  
+                
+                </section>
     
-       
+        onclick="signin()" id="sign-in">
     
     </main>
      
  <!-- Load the JS SDK asynchronously -->
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+ <!-- Twitter API-->
+<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-auth.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBaaR3NfTRH8Nn_lBU2g9FD586YPDfzqdg",
+      authDomain: "convertimagetopdf-94d3a.firebaseapp.com",
+      databaseURL: "https://convertimagetopdf-94d3a.firebaseio.com",
+      projectId: "convertimagetopdf-94d3a",
+      storageBucket: "convertimagetopdf-94d3a.appspot.com",
+      messagingSenderId: "688742065326",
+      appId: "1:688742065326:web:f9b11a9568b7c095"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+
+
+
+
 </body>
 </html>
