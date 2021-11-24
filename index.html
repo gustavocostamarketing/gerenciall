@@ -68,9 +68,20 @@
     
     </main>
      
- 
+ <!-- Load the JS SDK asynchronously -->
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+ <!-- Twitter API-->
 
-<script type="module">
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-auth.js"></script>
+   
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+
+ <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
     // TODO: Add SDKs for Firebase products that you want to use
