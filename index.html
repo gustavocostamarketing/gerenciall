@@ -68,27 +68,27 @@
     
     </main>
      
- <!-- Load the JS SDK asynchronously -->
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
- <!-- Twitter API-->
-<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-auth.js"></script>
+ 
 
-<script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
     // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyBaaR3NfTRH8Nn_lBU2g9FD586YPDfzqdg",
-      authDomain: "convertimagetopdf-94d3a.firebaseapp.com",
-      databaseURL: "https://convertimagetopdf-94d3a.firebaseio.com",
-      projectId: "convertimagetopdf-94d3a",
-      storageBucket: "convertimagetopdf-94d3a.appspot.com",
-      messagingSenderId: "688742065326",
-      appId: "1:688742065326:web:f9b11a9568b7c095"
+    const firebaseConfig = {
+      apiKey: "AIzaSyD6EqfZaRhTQtT7l2q8UZC3V4wwF3ZX4PU",
+      authDomain: "twitter-login-f3514.firebaseapp.com",
+      projectId: "twitter-login-f3514",
+      storageBucket: "twitter-login-f3514.appspot.com",
+      messagingSenderId: "899281716536",
+      appId: "1:899281716536:web:393b828eb3c519e8156dcd"
     };
+  
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    const app = initializeApp(firebaseConfig);
   </script>
-
 
 
 
