@@ -40,3 +40,13 @@ function signin()
       // ...
     });
         }
+
+        var firebase = require('firebase');
+firebase.intializeApp({
+  apiKey: "AIzaSyD6EqfZaRhTQtT7l2q8UZC3V4wwF3ZX4PU",
+  authDomain: "twitter-login-f3514.firebaseapp.com",
+  projectId: "twitter-login-f3514",
+  storageBucket: "twitter-login-f3514.appspot.com",
+  messagingSenderId: "899281716536",
+  appId: "1:899281716536:web:393b828eb3c519e8156dcd"
+});
