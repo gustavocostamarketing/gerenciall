@@ -12,6 +12,10 @@
     <script src="app.js"></script>
     <script src="facebook.script.js"></script>
     <script src="twitter.js"></script>
+
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="AIzaSyCugA4-2jSgGGhAJqSzEMrkLQ8rwsyGaGg.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
    
 </head>
 <header>
@@ -55,10 +59,10 @@
                 
                 <section class="card">
                     <div class="icon">
-                        <img src="img/twitter.png" alt="facebook">
+                        <img src="img/google.png" alt="google">
                     </div>
-                    <h3>Twitter</h3>
-            <button id="sign-in" onclick="signin()"> Login </button>
+                    <h3>Google</h3>
+            <button id="onSignIn" onclick="onSignIn()"> Login </button>
                   
                 
                 </section>
@@ -72,34 +76,8 @@
  <!-- Twitter API-->
 
 
-   <!-- The core Firebase JS SDK is always required -->
-
-
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAZSqeZvGRGs4CtJ4G1uaPeR8pebaeSghQ",
-    authDomain: "gerenciall-bb648.firebaseapp.com",
-    projectId: "gerenciall-bb648",
-    storageBucket: "gerenciall-bb648.appspot.com",
-    messagingSenderId: "806911858047",
-    appId: "1:806911858047:web:97cc3c25e05092b3ceb64a",
-    measurementId: "G-YYL45KGPBP"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-
-
+  <!-- GOOGLE API-->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </body>
 </html>
