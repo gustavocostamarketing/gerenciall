@@ -11,6 +11,7 @@
 
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
-        console.log("AIzaSyBy_EonNhRzEgTHDdFT5Zzjdisq4kP4xKw: " + id_token);
+        console.log("ID Token: " + id_token);
       }
  
+      key="AIzaSyBy_EonNhRzEgTHDdFT5Zzjdisq4kP4xKw"
